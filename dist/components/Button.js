@@ -3,7 +3,7 @@ import React from "react";
 import { Button as MantineButton } from "@mantine/core";
 export const Button = ({ ...props }) => {
     console.log("----------------------");
-    console.log("TW Custom Button Used!");
+    console.log("TW Custom Button Used");
     console.log("Props", props);
     console.log("----------------------");
     if (props.analyticsLabel) {
