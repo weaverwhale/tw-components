@@ -15,10 +15,12 @@
   "homepage": "https://github.com/weaverwhale/tw-components#readme",
   "scripts": {
     "dev": "tsc --jsx react-jsx --watch",
-    "build": "tsc --jsx react-jsx"
+    "build": "tsc --jsx react-jsx",
+    "precommit": "npm run build"
   },
   "devDependencies": {
     "@types/node": "^18",
+    "husky": "^8.0.3",
     "typescript": "^5.0.3"
   },
   "dependencies": {
