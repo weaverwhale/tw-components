@@ -9,11 +9,11 @@ We then add our own components/modifications to the library where needed.
 ## Installation
 
 ```bash
-npm install tw-components
+npm install @weaverwhale/tw-components
 ```
 
 ## Usage
 
 ```tsx
-import { Button } from "tw-components";
+import { Button } from "@weaverwhale/tw-components";
 ```
