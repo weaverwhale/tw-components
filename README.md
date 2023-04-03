@@ -22,7 +22,7 @@ import { Button } from "@weaverwhale/tw-components";
 export default function NewButton() {
   return (
     <Button radius="md" style={{ flex: 1 }}>
-      Test button
+      New Button
     </Button>
   );
 }
