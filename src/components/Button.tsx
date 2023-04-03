@@ -7,7 +7,7 @@ interface TWButtonProps extends ButtonProps {
 
 export const Button: React.FC = ({ ...props }: TWButtonProps) => {
   console.log("----------------------");
-  console.log("TW Custom Button Used");
+  console.log("TW Custom Button Used!");
   console.log("Props", props);
   console.log("----------------------");
 
