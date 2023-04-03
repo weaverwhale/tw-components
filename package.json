@@ -1,0 +1,29 @@
+{
+  "name": "@weaverwhale/tw-components",
+  "version": "1.0.0",
+  "description": "This is a component library for the TripleWhale app. It is built using [Mantine](https://mantine.dev/).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weaverwhale/tw-components.git"
+  },
+  "author": "Mike Weaver",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/weaverwhale/tw-components/issues"
+  },
+  "homepage": "https://github.com/weaverwhale/tw-components#readme",
+  "scripts": {
+    "dev": "tsc --jsx react-jsx --watch",
+    "build": "tsc --jsx react-jsx"
+  },
+  "devDependencies": {
+    "@types/node": "^18",
+    "typescript": "^5.0.3"
+  },
+  "dependencies": {
+    "@mantine/carousel": "^6.0.5",
+    "@mantine/core": "^6.0.5",
+    "@mantine/hooks": "^6.0.5"
+  }
+}
