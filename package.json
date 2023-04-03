@@ -16,7 +16,8 @@
   "scripts": {
     "dev": "tsc --jsx react-jsx --watch",
     "build": "tsc --jsx react-jsx",
-    "precommit": "npm run build"
+    "precommit": "npm run build",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@types/node": "^18",
