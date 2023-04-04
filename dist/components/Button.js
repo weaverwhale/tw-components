@@ -9,7 +9,7 @@ export const Button = ({ ...props }) => {
     console.log("----------------------");
     let onClickEvent = () => {
         if (props.analyticsLabel)
-            AnalyticsEvent(props.analyticsLabel);
+            AnalyticsEvent(props.analyticsLabel, props.analyticsPayload);
         if (props.onClick)
             props.onClick();
     };
