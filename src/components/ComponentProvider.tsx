@@ -10,11 +10,11 @@ export const ComponentProvider: React.FC = ({
     <MantineProvider
       withNormalizeCSS
       withGlobalStyles
+      {...props}
       theme={{
         ...props.theme,
         /** Put your mantine theme override here */
       }}
-      {...props}
     />
   );
 };
