@@ -1,4 +1,4 @@
-export const genericEventLogger = (label, payload) => {
+export const GenericEventLogger = (label, payload) => {
     if (label) {
         console.log("genericEventLogger", label, payload);
     }
