@@ -8,6 +8,8 @@ export const ComponentProvider: React.FC = ({
 }: ComponentProviderProps) => {
   return (
     <MantineProvider
+      withNormalizeCSS
+      withGlobalStyles
       theme={{
         ...props.theme,
         /** Put your mantine theme override here */
