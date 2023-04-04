@@ -17,11 +17,13 @@ export const Button: React.FC & typeof ButtonType = ({
   console.log("Props", props);
   console.log("----------------------");
 
+  // https://legacy.reactjs.org/warnings/unknown-prop.html
+  const { analyticsLabel, analyticsPayload, ...rest } = props;
+
   let onClickEvent = () => {
-    if (props.analyticsLabel)
-      AnalyticsEvent(props.analyticsLabel, props.analyticsPayload);
+    if (analyticsLabel) AnalyticsEvent(analyticsLabel, analyticsPayload);
     if (props.onClick) props.onClick();
   };
 
-  return <MantineButton {...props} onClick={onClickEvent} />;
+  return <MantineButton {...rest} onClick={onClickEvent} />;
 };
