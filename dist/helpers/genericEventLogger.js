@@ -3,4 +3,4 @@ export const GenericEventLogger = (label, payload) => {
         console.log("genericEventLogger", label, payload);
     }
 };
-//# sourceMappingURL=genericEventLogger.js.map
+//# sourceMappingURL=GenericEventLogger.js.map
