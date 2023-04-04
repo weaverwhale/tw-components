@@ -1,0 +1,1 @@
+{"version":3,"file":"genericEventLogger.js","sourceRoot":"","sources":["../../src/helpers/genericEventLogger.tsx"],"names":[],"mappings":"AAAA,MAAM,CAAC,MAAM,kBAAkB,GAAG,CAAC,KAAa,EAAE,OAAa,EAAE,EAAE;IACjE,IAAI,KAAK,EAAE;QACT,OAAO,CAAC,GAAG,CAAC,oBAAoB,EAAE,KAAK,EAAE,OAAO,CAAC,CAAC;KACnD;AACH,CAAC,CAAC"}
