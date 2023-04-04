@@ -7,12 +7,14 @@ export const Button = ({ ...props }) => {
     console.log("TW Custom Button Used!");
     console.log("Props", props);
     console.log("----------------------");
+    // https://legacy.reactjs.org/warnings/unknown-prop.html
+    const { analyticsLabel, analyticsPayload, ...rest } = props;
     let onClickEvent = () => {
-        if (props.analyticsLabel)
-            AnalyticsEvent(props.analyticsLabel, props.analyticsPayload);
+        if (analyticsLabel)
+            AnalyticsEvent(analyticsLabel, analyticsPayload);
         if (props.onClick)
             props.onClick();
     };
-    return _jsx(MantineButton, { ...props, onClick: onClickEvent });
+    return _jsx(MantineButton, { ...rest, onClick: onClickEvent });
 };
 //# sourceMappingURL=Button.js.map
