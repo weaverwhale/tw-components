@@ -1,7 +1,8 @@
 {
   "name": "@weaverwhale/tw-components",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "This is a component library for the TripleWhale app. It is built using [Mantine](https://mantine.dev/).",
+  "main": "src/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/weaverwhale/tw-components.git"
