@@ -4,7 +4,7 @@
 
 This is a component library for the TripleWhale app. It is built using [Mantine](https://mantine.dev/).
 
-By default, we export the Mantine `core`, `hooks`, and `carousel` packages. You can use them the exact same way.
+By default, we export the Mantine `core`, `hooks`, and `carousel` packages.
 
 We then add our own components/modifications to the library where needed.
 
@@ -17,7 +17,7 @@ npm install @weaverwhale/tw-components
 ## Usage
 
 ```tsx
-import { Button } from "@weaverwhale/tw-components/core";
+import { Button } from "@weaverwhale/tw-components";
 
 export default function NewButton() {
   return (
