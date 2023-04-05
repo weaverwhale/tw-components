@@ -1,7 +1,7 @@
 import { jsx as _jsx } from "react/jsx-runtime";
 import React from "react";
 import { MantineProvider } from "@mantine/core";
-export const ComponentProvider = ({ ...props }) => {
+export const TWProvider = ({ ...props }) => {
     return (_jsx(MantineProvider, { withNormalizeCSS: true, withGlobalStyles: true, ...props, theme: {
             // Override any other properties from default theme
             spacing: {
@@ -14,4 +14,4 @@ export const ComponentProvider = ({ ...props }) => {
             colorScheme: props.darkMode ? "dark" : "light",
         }, children: props.children }));
 };
-//# sourceMappingURL=ComponentProvider.js.map
+//# sourceMappingURL=TWProvider.js.map

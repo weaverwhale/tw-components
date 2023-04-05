@@ -2,8 +2,16 @@
 export * from "@mantine/core";
 export * from "@mantine/hooks";
 export * from "@mantine/carousel";
+export * from "react-error-boundary";
 
-// Custom component overrides
+// Core site components
+export { Header } from "./components/core/Header";
+export { Footer } from "./components/core/Footer";
+
+// Component overrides
 export { Button } from "./components/Button";
-export { ComponentProvider } from "./components/ComponentProvider";
+export { TWProvider } from "./components/TWProvider";
 export { ErrorBoundary } from "./components/ErrorBoundary";
+
+// Core pages
+export { FourOhFour } from "./pages/FourOhFour";
