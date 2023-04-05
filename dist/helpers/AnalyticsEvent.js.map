@@ -1,1 +1,0 @@
-{"version":3,"file":"AnalyticsEvent.js","sourceRoot":"","sources":["../../src/helpers/AnalyticsEvent.tsx"],"names":[],"mappings":"AAAA,MAAM,CAAC,MAAM,cAAc,GAAG,CAAC,KAAa,EAAE,OAAa,EAAE,EAAE;IAC7D,IAAI,KAAK,EAAE;QACT,OAAO,CAAC,GAAG,CAAC,gBAAgB,EAAE,KAAK,EAAE,OAAO,CAAC,CAAC;KAC/C;AACH,CAAC,CAAC"}
