@@ -4,6 +4,8 @@ export * from "@mantine/hooks";
 export * from "@mantine/carousel";
 export * from "react-error-boundary";
 
+import "./styles.css";
+
 // Core site components
 export { Header } from "./components/core/Header";
 export { Footer } from "./components/core/Footer";
