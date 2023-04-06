@@ -8,6 +8,7 @@ import "./styles.css";
 export { Header } from "./components/core/Header";
 export { Footer } from "./components/core/Footer";
 // Component overrides
+export { Link } from "./components/Link";
 export { Button } from "./components/Button";
 export { TWProvider } from "./components/TWProvider";
 export { ErrorBoundary } from "./components/ErrorBoundary";

@@ -1,5 +1,10 @@
 import { Text } from "@mantine/core";
-import { Link } from "react-router-dom";
+import { Link } from "../Link";
+
+const links = [
+  { href: "/", text: "Home", analyticsLabel: "Header Link - Home" },
+  { href: "/404", text: "404", analyticsLabel: "Header Link - 404 Page" },
+];
 
 export function Header({ darkMode, setDarkMode }) {
   return (
@@ -16,8 +21,16 @@ export function Header({ darkMode, setDarkMode }) {
           </a>
         </div>
         <nav>
-          <Link to="/">Home</Link>
-          <Link to="/404">404</Link>
+          {links.map((link) => (
+            <Link
+              key={link.href}
+              to={link.href}
+              analyticsLabel={link.analyticsLabel}
+              analyticsPayload={{ href: link.href, text: link.text }}
+            >
+              {link.text}
+            </Link>
+          ))}
           <div id="dark-light-toggle" className={`${darkMode && "dark"}`}>
             {darkMode ? (
               <i

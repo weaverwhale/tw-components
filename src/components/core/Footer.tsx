@@ -1,4 +1,23 @@
-import { Text, Flex, Button } from "@mantine/core";
+import { Text, Flex } from "@mantine/core";
+import { Button } from "../Button";
+
+const buttons = [
+  {
+    href: "https://github.com/weaverwhale/tw-components-playground",
+    text: "Github",
+    analyticsLabel: "Footer Link - Github",
+  },
+  {
+    href: "https://www.npmjs.com/package/@weaverwhale/tw-components",
+    text: "NPM Package",
+    analyticsLabel: "Footer Link NPM Package",
+  },
+  {
+    href: "/reports/lighthouse.html",
+    text: "Lighthouse Report",
+    analyticsLabel: "Footer Link - Lighthouse Report",
+  },
+];
 
 export function Footer() {
   const today = new Date();
@@ -12,42 +31,23 @@ export function Footer() {
         wrap="wrap"
         mb={20}
       >
-        <Button
-          component="a"
-          radius="xl"
-          color="dark"
-          size="xs"
-          compact
-          href="https://github.com/weaverwhale/tw-components-playground"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Github
-        </Button>
-        <Button
-          component="a"
-          radius="xl"
-          color="red"
-          size="xs"
-          compact
-          href="https://www.npmjs.com/package/@weaverwhale/tw-components"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          NPM Package
-        </Button>
-        <Button
-          component="a"
-          radius="xl"
-          color="blue"
-          size="xs"
-          compact
-          href="/reports/lighthouse.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Lighthouse Report
-        </Button>
+        {buttons.map((button) => (
+          <Button
+            component="a"
+            radius="xl"
+            color="dark"
+            size="xs"
+            compact
+            href={button.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            analyticsLabel={button.analyticsLabel}
+            analyticsPayload={{ href: button.href, text: button.text }}
+            key={button.href}
+          >
+            {button.text}
+          </Button>
+        ))}
       </Flex>
       <Text align={"center"}>
         &copy; {today.getFullYear()} Triple Whale. All rights reserved.
