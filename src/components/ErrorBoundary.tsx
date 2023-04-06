@@ -8,8 +8,12 @@ export const ErrorBoundary: React.FC | any = ({ ...props }: any) => {
   let logError = (error: Error, info: { componentStack: string }) => {
     GenericEventLogger("error boundary reached!", { error, info });
   };
+
+  const UntypedReactErrorBoundary = ReactErrorBoundary as any;
+
+  // https://github.com/DefinitelyTyped/DefinitelyTyped/issues/21242
   return (
-    <ReactErrorBoundary
+    <UntypedReactErrorBoundary
       {...props}
       onError={logError}
       fallback={<FourOhFour catastrophic={true} />}

@@ -7,6 +7,8 @@ export const ErrorBoundary = ({ ...props }) => {
     let logError = (error, info) => {
         GenericEventLogger("error boundary reached!", { error, info });
     };
-    return (_jsx(ReactErrorBoundary, { ...props, onError: logError, fallback: _jsx(FourOhFour, { catastrophic: true }), fallbackRender: _jsx(FourOhFour, { catastrophic: true }) }));
+    const UntypedReactErrorBoundary = ReactErrorBoundary;
+    // https://github.com/DefinitelyTyped/DefinitelyTyped/issues/21242
+    return (_jsx(UntypedReactErrorBoundary, { ...props, onError: logError, fallback: _jsx(FourOhFour, { catastrophic: true }), fallbackRender: _jsx(FourOhFour, { catastrophic: true }) }));
 };
 //# sourceMappingURL=ErrorBoundary.js.map
