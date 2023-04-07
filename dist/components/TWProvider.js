@@ -1,7 +1,17 @@
 import { jsx as _jsx } from "react/jsx-runtime";
-import React from "react";
+import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { MantineProvider } from "@mantine/core";
+import { GenericEventLogger } from "../helpers/GenericEventLogger";
 export const TWProvider = ({ ...props }) => {
+    const location = useLocation();
+    // analytics event on page change/load
+    useEffect(() => {
+        GenericEventLogger("Page View", {
+            href: location.pathname,
+            ...location,
+        });
+    }, [location]);
     return (_jsx(MantineProvider, { withNormalizeCSS: true, withGlobalStyles: true, ...props, theme: {
             // Override any other properties from default theme
             spacing: {

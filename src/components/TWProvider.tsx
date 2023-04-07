@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { MantineProvider, MantineProviderProps } from "@mantine/core";
+import { GenericEventLogger } from "../helpers/GenericEventLogger";
 
 interface ComponentProviderProps extends MantineProviderProps {
   darkMode?: boolean;
@@ -8,6 +10,16 @@ interface ComponentProviderProps extends MantineProviderProps {
 export const TWProvider: React.FC | any = ({
   ...props
 }: ComponentProviderProps) => {
+  const location = useLocation();
+
+  // analytics event on page change/load
+  useEffect(() => {
+    GenericEventLogger("Page View", {
+      href: location.pathname,
+      ...location,
+    });
+  }, [location]);
+
   return (
     <MantineProvider
       withNormalizeCSS

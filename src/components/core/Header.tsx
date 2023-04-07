@@ -1,5 +1,7 @@
 import { Text } from "@mantine/core";
 import { Link } from "../Link";
+import { GenericEventLogger } from "../../helpers/GenericEventLogger";
+import { useLocation } from "react-router-dom";
 
 const links = [
   { href: "/", text: "Home", analyticsLabel: "Header Link - Home" },
@@ -7,6 +9,8 @@ const links = [
 ];
 
 export function Header({ darkMode, setDarkMode }) {
+  const location = useLocation();
+
   return (
     <header>
       <div className="header-inner">
@@ -36,7 +40,14 @@ export function Header({ darkMode, setDarkMode }) {
               <i
                 id="dark"
                 aria-label="Dark Mode"
-                onClick={() => setDarkMode(false)}
+                onClick={() => {
+                  setDarkMode(false);
+                  GenericEventLogger("Dark Mode - Off", {
+                    mode: "dark",
+                    href: location.pathname,
+                    ...location,
+                  });
+                }}
               >
                 <Text c="white">🌚 Dark Mode</Text>
               </i>
@@ -44,7 +55,14 @@ export function Header({ darkMode, setDarkMode }) {
               <i
                 id="light"
                 aria-label="Light Mode"
-                onClick={() => setDarkMode(true)}
+                onClick={() => {
+                  setDarkMode(true);
+                  GenericEventLogger("Dark Mode - On", {
+                    mode: "light",
+                    href: location.pathname,
+                    ...location,
+                  });
+                }}
               >
                 <Text c="white">🌝 Light Mode</Text>
               </i>
