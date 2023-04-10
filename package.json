@@ -17,7 +17,9 @@
     "dev": "tsc --jsx react-jsx --watch",
     "build": "tsc --jsx react-jsx",
     "precommit": "npm run build",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "publish": "npm version patch --force && npm publish",
+    "publish:minor": "npm version minor --force && npm publish"
   },
   "devDependencies": {
     "@types/node": "^18",

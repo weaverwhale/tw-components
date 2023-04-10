@@ -44,3 +44,30 @@ This project leverages the `tsc` compiler (similar to other `@tw` package), and 
 Meaning, you can make changes to this library and see them reflected in your project without having to restart the dev server or reload your browser - your changes here will be directly injected into your browser.
 
 Any other `ESM/esbuild`-based bundlers should work as well (e.g. Webpack, Parcel, etc.), but they have not been tested.
+
+## Publishing
+
+This project is Published on [npm](https://npmjs.com/) as `@weaverwhale/tw-components`.
+
+### Patch Version
+
+To publish a new patch version, run the following command:
+
+```bash
+# Bump the version in package.json and publish to npm
+npm publish:patch
+```
+
+### Mino
+
+To publish a new minor version, run the following command:
+
+```bash
+npm publish:minor
+```
+
+Note this should be semi-rare, and well tested, as we should be able to add new components without breaking changes.
+
+### Major Version
+
+Since this is a public package, we should not publish major versions without a discussion, and therefore there is no command for this.
