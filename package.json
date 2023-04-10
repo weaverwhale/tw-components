@@ -18,8 +18,8 @@
     "build": "tsc --jsx react-jsx",
     "precommit": "npm run build",
     "prepare": "husky install",
-    "publish": "npm version patch --force && npm publish",
-    "publish:minor": "npm version minor --force && npm publish"
+    "publish:patch": "npm version patch; npm publish",
+    "publish:minor": "npm version minor; npm publish"
   },
   "devDependencies": {
     "@types/node": "^18",

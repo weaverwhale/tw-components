@@ -54,8 +54,8 @@ This project is Published on [npm](https://npmjs.com/) as `@weaverwhale/tw-compo
 To publish a new patch version, run the following command:
 
 ```bash
-# Bump the sub-version in package.json and publish to npm
-npm publish
+# Bump the patch version in package.json, and publish to npm
+npm publish:patch
 ```
 
 ### Minor
@@ -63,7 +63,7 @@ npm publish
 To publish a new minor version, run the following command:
 
 ```bash
-# Bump the minor version in package.json and publish to npm
+# Bump the minor version in package.json, and publish to npm
 npm publish:minor
 ```
 
