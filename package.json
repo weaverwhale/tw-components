@@ -1,6 +1,6 @@
 {
   "name": "@weaverwhale/tw-components",
-  "version": "0.2.17",
+  "version": "0.2.18",
   "description": "This is a component library for the TripleWhale app. It is built using [Mantine](https://mantine.dev/).",
   "main": "src/index.js",
   "repository": {
@@ -18,8 +18,8 @@
     "build": "tsc --jsx react-jsx",
     "precommit": "npm run build",
     "prepare": "husky install",
-    "publish": "npm version patch --force && npm publish && exit 0",
-    "publish:minor": "npm version minor --force && npm publish && exit 0"
+    "publish": "npm version patch --force",
+    "publish:minor": "npm version minor --force"
   },
   "devDependencies": {
     "@types/node": "^18",
