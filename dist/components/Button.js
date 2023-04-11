@@ -1,5 +1,4 @@
 import { jsx as _jsx } from "react/jsx-runtime";
-import React from "react";
 import { Button as MantineButton } from "@mantine/core";
 import { GenericEventLogger } from "../helpers/GenericEventLogger";
 export const Button = ({ ...props }) => {

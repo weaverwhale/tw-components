@@ -1,5 +1,4 @@
 import { jsx as _jsx } from "react/jsx-runtime";
-import React from "react";
 import { Link as MantineLink } from "react-router-dom";
 import { GenericEventLogger } from "../helpers/GenericEventLogger";
 export const Link = ({ ...props }) => {

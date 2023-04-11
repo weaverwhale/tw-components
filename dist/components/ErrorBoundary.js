@@ -1,5 +1,4 @@
 import { jsx as _jsx } from "react/jsx-runtime";
-import React from "react";
 import { ErrorBoundary as ReactErrorBoundary } from "react-error-boundary";
 import { GenericEventLogger } from "../helpers/GenericEventLogger";
 import { FourOhFour } from "../pages/FourOhFour";

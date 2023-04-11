@@ -30,6 +30,7 @@
     "@mantine/carousel": "^6.0.5",
     "@mantine/core": "^6.0.5",
     "@mantine/hooks": "^6.0.5",
+    "@shopify/polaris": "^10.42.1",
     "react": "^18.2.0",
     "react-error-boundary": "^4.0.3",
     "react-router-dom": "^6.10.0"

@@ -4,7 +4,10 @@ export * from "@mantine/hooks";
 export * from "@mantine/carousel";
 export * from "react-error-boundary";
 
-import "./styles.css";
+import "./styles/styles.css";
+
+// Shopify components
+export { MediaCard } from "@shopify/polaris";
 
 // Core site components
 export { Header } from "./components/core/Header";
