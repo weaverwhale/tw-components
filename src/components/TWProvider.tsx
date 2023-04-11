@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { AppProvider } from "@shopify/polaris";
 import { MantineProvider, MantineProviderProps } from "@mantine/core";

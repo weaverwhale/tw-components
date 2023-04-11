@@ -1,3 +1,4 @@
+import React from "react";
 import { Text, Flex } from "@mantine/core";
 import { Button } from "../Button";
 import { useErrorBoundary } from "react-error-boundary";

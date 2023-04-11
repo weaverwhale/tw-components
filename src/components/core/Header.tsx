@@ -1,3 +1,4 @@
+import React from "react";
 import { Text } from "@mantine/core";
 import { Link } from "../Link";
 import { GenericEventLogger } from "../../helpers/GenericEventLogger";
